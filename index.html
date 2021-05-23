@@ -123,11 +123,13 @@
                                     <p>Rellene los campos obligatorios que contengan un (*)</p>
                                     <div class="col-lg-12 col-md-12 col-sm-12 pb-3 pt-3">
                                         <label for="nombreInput">Nombre completo (*)</label>
-                                        <input id="nombreInput" type="text" role="textbox" placeholder="Nombre completo" required />
+                                        <input id="nombreInput" type="text" role="textbox" placeholder="Nombre completo" required aria-describedby="descNombre" />
+                                        <span id="descNombre">Debe escribir su nombre completo, como por ejemplo: Luis Melgarejo</span>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 pb-3 pt-3">
                                         <label for="correoInput">Correo (*)</label>
-                                        <input id="correoInput" type="email" role="textbox" placeholder="Escriba su correo" required />
+                                        <input id="correoInput" type="email" role="textbox" placeholder="Escriba su correo" required aria-describedby="descCorreo" />
+                                        <span id="descCorreo">Debe escribir su correo personal, como por ejemplo: luismelgarejoalarcon@gmail.com</span>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 pb-3 pt-3">
                                         <button type="submit" role="button" title="Click para enviar formulario" aria-describedby="descriptionSend">Enviar</button>
